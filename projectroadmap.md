@@ -8,18 +8,18 @@
 
 5. Create projectroadmap file       [X]
 
-6. Utilize tutorials to learn how   [X]
+6. Utilize tutorials to learn how   
    to search for testing locations
-   in the zip code provided        
+   in the zip code provided         [X]
    
-7. Edit existing files in           [*]
-   repository                       
+7. Edit existing files in           
+   repository                       [*] 
    
-8. Research COVID-19 Symptoms to    [*]
+8. Research COVID-19 Symptoms to    
    to determine what symptoms we
-   should be querying users for.                      
+   should be querying users for.    [*]                  
 
-9. Write and edit Code              [*]                    
+9. Write and edit code              [*]                    
 
 10. Test code                       [ ]
 
