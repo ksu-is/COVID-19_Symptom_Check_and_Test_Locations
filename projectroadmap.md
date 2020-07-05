@@ -1,13 +1,28 @@
-- [x] Create repository DONE
-- [x] Create readme file DONE
-- [x] Evaluate the code at https://github.com/shreyasn25/rolling-dice-game and incorporate effects into Duel of Dices. (Ebonee)
-- [x] Evaluate the code located at https://github.com/borntyping/python-dice and decide whether or not to create Duel of Dices similar to it.(Ebonee)
-- [x] Develop code in a creative way for Duel of Dices that includes effects and possibly surprises. (Ebonee)
-- [x] DONE Find code to use as a guideline (Ebonee)
-- [x] DONE Writing documentation for code
-- [x] DONE Integrating code
-- [x] DONE Developing code for the dice game
-- [x] DONE Testing the code
-- [x] DONE Brainstorming best special effects to add to code 
-- [x] DONE Adding and testing out different special effects within the code
-- [x] DONE Create final code for Duel of Dices
+1. Create Repository                [X]
+
+2. Add License                      [X]
+
+3. Edit README file                 [X]
+
+4. Create pull requests and merge   [X]
+
+5. Create projectroadmap file       [X]
+
+6. Utilize tutorials to learn how   [X]
+   to search for testing locations
+   in the zip code provided        
+   
+7. Edit existing files in           [*]
+   repository                       
+   
+8. Research COVID-19 Symptoms to    [*]
+   to determine what symptoms we
+   should be querying users for.                      
+
+9. Write and edit Code              [*]                    
+
+10. Test code                       [ ]
+
+12. Make final changes              [ ]
+
+13. Submit                          [ ]
