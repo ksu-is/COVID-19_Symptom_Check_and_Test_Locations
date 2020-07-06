@@ -15,7 +15,7 @@ user_symptoms = []
 # End establishment #
 
 # Symptoms Examination #
-print("We are about to ask you a series of medical questions. Please type '1' for 'Yes' or  '0' for 'No' for your responses.)
+print("We are about to ask you a series of medical questions. Please type '1' for 'Yes' or  '0' for 'No' for your responses.")
 ## Begin symptom1. We will be using the same type of 'while True' functions to quiz users for each of the symptoms. This first one below will be used as a template for the reamining symptoms ##
 symptom1 = input("Within the last two weeks have you experienced a fever or bodily chills in any capacity? ")
 while True:
