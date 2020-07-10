@@ -23,17 +23,23 @@
    example projects should be 
    incorporated in our project.      [*]
 
-8. Edit existing files in           
+9. Edit existing files in           
    repository.                       [*] 
+
+10. Decided to use ‘Medical-Symptom-Checker’ 
+   project as basis of study for our 
+   project.                          [X]
    
-9. Research COVID-19 Symptoms to    
+
+11. Research COVID-19 Symptoms to    
    to determine what symptoms we
    should be querying users for.     [*]                  
 
-9. Write and edit code               [*]                    
+12. Write and edit code              [*] 
+                   
 
-10. Test code                        [ ]
+13. Test code                        [*]
 
-12. Make final changes               [ ]
+14. Make final changes               [ ]
 
-13. Submit                           [ ]
+15. Submit                           [ ]
