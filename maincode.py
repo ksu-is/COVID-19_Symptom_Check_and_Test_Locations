@@ -52,3 +52,20 @@ while True:
             print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
             symptom1 = input("Within the last two weeks have you experienced a fever or bodily chills in any capacity? ")
 ## End symptom2 ##
+
+## Begin symptom3 ##
+symptom3 = input("Within the last two weeks have you had any issues with your breathing, such as lightheadedness or shallowness of breath? ")
+while True:
+    if symptom3 == "1":
+        user_responses += ("1")
+        user_symptoms.append("Breathing Difficulties")
+        break
+    elif symptom3 == "0":
+        break
+    else:
+        if symptom3 != "1" or "0":
+            print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
+            symptom3 = input("Within the last two weeks have you had any issues with your breathing, such as lightheadedness or shallowness of breath? ")
+## End symptom3 ##
+
+
