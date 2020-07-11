@@ -98,6 +98,21 @@ while True:
             symptom5 = input("Within the last two weeks have you experienced any noticeable fatigue? ")
 ## End symptom5 ##
 
+## Begin symptom6 ##
+symptom6 = input("Within the last two weeks have you experienced any irregular headaches and/or migraines? ")
+while True:
+    if symptom6 == "1":
+        user_responses += ("1")
+        user_symptoms.append("Headaches")
+        break
+    elif symptom6 == "0":
+        break
+    else:
+        if symptom6 != "1" or "0":
+            print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
+            symptom6 = input("Within the last two weeks have you experienced any irregular headaches and/or migraines? ")
+## End symptom6 ##
+
 
 
 
