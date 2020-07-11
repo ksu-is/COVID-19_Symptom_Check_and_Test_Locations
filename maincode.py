@@ -83,5 +83,21 @@ while True:
             symptom4 = input("Within the last two weeks have you experienced any noticeable fatigue? ")
 ## End symptom4 ##
 
+## Begin symptom5 ##
+symptom5 = input("Within the last two weeks have you experienced any noticeable bodily and/or muscle aches? ")
+while True:
+    if symptom5 == "1":
+        user_responses += ("1")
+        user_symptoms.append("Fatigue")
+        break
+    elif symptom5 == "0":
+        break
+    else:
+        if symptom5 != "1" or "0":
+            print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
+            symptom5 = input("Within the last two weeks have you experienced any noticeable fatigue? ")
+## End symptom5 ##
+
+
 
 
