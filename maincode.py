@@ -113,6 +113,22 @@ while True:
             symptom6 = input("Within the last two weeks have you experienced any irregular headaches and/or migraines? ")
 ## End symptom6 ##
 
+## Begin symptom7 ##
+symptom7 = input("Within the last two weeks have you experienced any diminishment of your sense of taste and/or smell? ")
+while True:
+    if symptom7 == "1":
+        user_responses += ("1")
+        user_symptoms.append("Loss of taste and/or smell")
+        break
+    elif symptom7 == "0":
+        break
+    else:
+        if symptom7 != "1" or "0":
+            print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
+            symptom7 = input("Within the last two weeks have you experienced any diminishment of your sense of taste and/or smell? ")
+## End symptom7 ##
+
+
 
 
 
