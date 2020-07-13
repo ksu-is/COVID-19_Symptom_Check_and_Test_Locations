@@ -148,6 +148,36 @@ while True:
             symptom8 = input("Within the last two weeks have you experienced any noticeable throat soreness? ")
 ## End symptom8 ##
 
+## Begin symptom9 ##
+symptom9 = input("Within the last two weeks have you had any issues with congestion? ")
+while True:
+    if symptom9 == "1":
+        user_responses += ("1")
+        user_symptoms.append("Congestion")
+        break
+    elif symptom9 == "0":
+        break
+    else:
+        if symptom9 != "1" or "0":
+            print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
+            symptom9 = input("Within the last two weeks have you experienced any noticeable throat soreness? ")
+## End symptom9 ##
+
+## Begin symptom10 ##
+symptom10 = input("Within the last two weeks have you had any issues with a runny nose and/or sneezing? ")
+while True:
+    if symptom10 == "1":
+        user_responses += ("1")
+        user_symptoms.append("Runny nose")
+        break
+    elif symptom10 == "0":
+        break
+    else:
+        if symptom10 != "1" or "0":
+            print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
+            symptom10 = input("Within the last two weeks have you had any issues with a runny nose and/or sneezing? ")
+## End symptom10 ##
+
 
 
 
