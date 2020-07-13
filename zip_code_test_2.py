@@ -1,5 +1,6 @@
 import webbrowser
 user_zip_code = []
+print("We will now ask you for your five digit zip code. We will use this zip code to provide you with testing locations near you.")
 def zip_code_tester():
     while True: 
         zip_code = input("Please enter your five digit zip code: ")

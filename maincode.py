@@ -1,3 +1,5 @@
+
+
 #Introductory greeting #
 print("Welcome to our COVID-19 Symptom Checker! We will ask you a series of questions regarding whether you are exhibiting any of the CDC's currently recognized list of COVID-19 Symptoms.")
 print("If you unfortunately are exhibiting symptoms of COVID-19, we will then provide you with resources to get tested locally.")
@@ -220,7 +222,27 @@ while True:
 
 # End symptom examination #
 
+# Analyze and format responses #
+for answer in range(0, len(user_responses)): 
+    user_responses[answer] = int(user_responses[answer]) 
+user_symptom_list = ", ".join(user_symptoms)
+# End anaylsis and formatting
 
+# summary statement #
+print("Based on your responses, you have experienced",sum(user_responses),"symptom(s) of COVID-19: \n", user_symptom_list)
+# End summary statement #
+
+# Final recommendation and zip code test #
+if sum(user_responses) >= 3:
+    print("You have indicated that you have experienced atleast 3 of the symptoms of COVID-19.")
+    if "Dry cough" in user_symptoms:
+        print("By indicating that you have experienced a dry cough, you are considered especially at risk for complications from the virus.")
+    print("Because of this, we recommend that you get tested for COVID-19.")
+    import zip_code_test_2 as zip_code_test
+    zip_code_test
+
+elif sum(user_responses) <=3 and "Dry cough" in user_symptoms:
+    print("Because you have a dry cough, we recommend that ")
 
 
 
