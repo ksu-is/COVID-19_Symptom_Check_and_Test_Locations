@@ -55,7 +55,7 @@ while True:
     else:
         if symptom2 != "1" or "0":
             print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
-            symptom2 = input("Within the last two weeks have you experienced a fever or bodily chills in any capacity? ")
+            symptom2 = input("Within the last two weeks have you had any issues with coughing, especially dry coughing? ")
 ## End symptom2 ##
 
 ## Begin symptom3 ##
@@ -177,6 +177,48 @@ while True:
             print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
             symptom10 = input("Within the last two weeks have you had any issues with a runny nose and/or sneezing? ")
 ## End symptom10 ##
+
+## Begin symptom11 ##
+### Once again, because of the severity of these symptoms, we will be subdividing it into two symptoms to append: Nausea and/or vertigo, and Vomitting ###
+symptom11 = input("Within the last two weeks have you experienced and nausea and/or vertigo? ")
+while True:
+    if symptom11 == "1":
+        user_responses += ("1")
+        user_symptoms.append("Nausea and/or vertigo")
+        vomitting = input("Have you also had any issues with vomitting within the last two weeks? ")
+        if vomitting == "1":
+            user_responses += ("1")
+            user_symptoms.append("Vomitting")
+            break
+        elif vomitting == "0":
+            break
+        else:
+            print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
+            vomitting = input("Have you also had any issues with vomitting within the last two weeks? ")
+    elif symptom11 == "0":
+        break
+    else:
+        if symptom11 != "1" or "0":
+            print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
+            symptom11 = input("Within the last two weeks have you experienced and nausea and/or vertigo? ")
+## End symptom11 ##
+
+## Begin symptom12 ##
+symptom12 = input("Within the last two weeks have you had any issues with diarrhea? ")
+while True:
+    if symptom12 == "1":
+        user_responses += ("1")
+        user_symptoms.append("Diarrhea")
+        break
+    elif symptom12 == "0":
+        break
+    else:
+        if symptom12 != "1" or "0":
+            print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
+            symptom12 = input("Within the last two weeks have you had any issues with a runny nose and/or sneezing? ")
+## End symptom12 ##
+
+# End symptom examination #
 
 
 
