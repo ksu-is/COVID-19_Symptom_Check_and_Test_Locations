@@ -237,12 +237,33 @@ if sum(user_responses) >= 3:
     print("You have indicated that you have experienced atleast 3 of the symptoms of COVID-19.")
     if "Dry cough" in user_symptoms:
         print("By indicating that you have experienced a dry cough, you are considered especially at risk for complications from the virus.")
-    print("Because of this, we recommend that you get tested for COVID-19.")
+    print("Because of this, we strongly recommend that you get tested for COVID-19.")
     import zip_code_test_2 as zip_code_test
     zip_code_test
 
-elif sum(user_responses) <=3 and "Dry cough" in user_symptoms:
-    print("Because you have a dry cough, we recommend that ")
+elif sum(user_responses) < 3:
+    print("You have indicated that you are suffering from less than 3 symptoms of COVID-19, which does not render you a 'high-risk' individual for COVID-19 complications currently.")
+    if "Dry cough" and "Vomitting" in user_symptoms:
+        print("However, because you have had issues with both vomitting and a dry cough, which are considered the most severe symptoms of COVID-19, we strongly recommend that you get tested for COVID-19.")
+        import zip_code_test_2 as zip_code_test
+        zip_code_test
 
+    elif "Dry cough" in user_symptoms:
+        print("However, because you have a dry cough, which is considered a severe symptom of COVID-19, we still recommend that you get tested for COVID-19.")
+        import zip_code_test_2 as zip_code_test
+        zip_code_test
 
+    elif "Vomitting" in user_symptoms:
+        print("However, because you have had issues with vomitting, which is considered a severe symtpom of COVID-19, we strongly recommend that you get tested for COVID-19.")
+        import zip_code_test_2 as zip_code_test
+        zip_code_test
+  
+    else:
+        print("Because of this, we don't recommend that you get tested for COVID-19 currently, although this is certainly subject to change if your health condition deteriorates.")
+        print("Please be responsible in your social distancing and take proper precautions whenever maintaining social distances of atleast 6 feet is not possible.")
+    
+# End final recommendation and zip code test #
+
+# Goodbye statement
+print("Thank you for using our COVID-19 Symptom Checker and Testing Locations program!")
 
