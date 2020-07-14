@@ -1,15 +1,15 @@
 import webbrowser
 user_zip_code = []
-print("We will now ask you for your five digit zip code. We will use this zip code to provide you with testing locations near you.")
+print("We will now ask you for your five digit zip code. We will use this zip code to provide you with COVID-19 testing locations near you.")
 def zip_code_tester():
     while True: 
         zip_code = input("Please enter your five digit zip code: ")
         if len(zip_code) != 5:
             print("Incorrect response. Please try again.")
-            zip_code = input("Please enter your five digit zip code: ")
+            
         elif zip_code.isalpha == True:
             print("Incorrect response. Please try again.")
-            zip_code = input("Please enter your five digit zip code: ")
+
         else:
             user_zip_code.append(zip_code)
             return user_zip_code
