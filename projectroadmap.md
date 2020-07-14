@@ -1,45 +1,27 @@
-1. Create Repository.                [DONE]
+[DONE] Create Repository.     
 
-2. Add License.                      [DONE]
+[DONE] Add License.                     
 
-3. Edit README file.                 [DONE]
+[DONE]Edit README file.            
 
-4. Create pull requests and merge.   [DONE]
+[DONE] Create projectroadmap file. 
 
-5. Create projectroadmap file.       [DONE]
+[DONE] Utilize tutorials to learn how to search for testing locations in the zip code provided.         
 
-6. Utilize tutorials to learn how   
-   to search for testing locations
-   in the zip code provided.         [DONE]
+[DONE] Study previously created projects in the KSU IS Github, specifically the 'Medical-Symptom_Checker' and'COVID-19-Symptom_Checker-Chatbot' projects.                        
 
-7. Study previously created projects
-   in the KSU IS Github, specifically 
-   the 'Medical-Symptom_Checker' and
-   'COVID-19-Symptom_Checker-Chatbot'
-   projects.                         [DONE]
+[DONE] Determine what information, data,  and coding techniques from theseexample projects should be incorporated in our project.    
 
-8. Determine what information, data, 
-   and coding techniques from these
-   example projects should be 
-   incorporated in our project.      [DONE]
+[DONE] Edit existing files in repository.                     
 
-9. Edit existing files in           
-   repository.                       [*] 
-
-10. Decided to use ‘Medical-Symptom-Checker’ 
-   project as basis of study for our 
-   project.                          [DONE]
+[DONE] Decided to use ‘Medical-Symptom-Checker’ project as basis of study for our project.                        
    
+[DONE] Research COVID-19 Symptoms to determine what symptoms we should be querying users for.                    
 
-11. Research COVID-19 Symptoms to    
-   to determine what symptoms we
-   should be querying users for.     [DONE]                  
-
-12. Write and edit code              [*] 
+[DONE] Write and edit code       
                    
+[In Progress] Test code                
 
-13. Test code                        [*]
+[In Progress] Make final changes              
 
-14. Make final changes               [ ]
-
-15. Submit                           [ ]
+[] Submit                        
