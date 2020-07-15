@@ -9,7 +9,7 @@ print("If you unfortunately are exhibiting symptoms of COVID-19, we will then pr
 # End introductory greeting #
 
 # Symptoms Explaination #
-cdc_symptoms = ["Fever and/or chills, Coughing, Breathing difficulties, Fatigue, Muscle and/or body aches, Headache, Loss of taste and/or smell, Sore throat, Congestion, Runny nose, Nausea and/or vomitting, Diarrhea"]
+cdc_symptoms = ["Fever and/or chills, Coughing, Breathing difficulties, Fatigue, Muscle and/or body aches, Headache, Loss of taste and/or smell, Sore throat, Congestion, Runny nose, Nausea and/or vomiting, Diarrhea"]
 covid_symptoms = ", ".join(cdc_symptoms)
 print("Based on current CDC data, the currently recognized symptoms of COVID-19 are:", covid_symptoms)
 # End symtoms explaination #
@@ -190,10 +190,10 @@ while True:
     if symptom11 == "1":
         user_responses += ("1")
         user_symptoms.append("Nausea and/or vertigo")
-        vomitting = input("Have you also had any issues with vomitting within the last two weeks? ")
+        vomitting = input("Have you also had any issues with vomiting within the last two weeks? ")
         if vomitting == "1":
             user_responses += ("1")
-            user_symptoms.append("Vomitting")
+            user_symptoms.append("Vomiting")
             break
         elif vomitting == "0":
             break
@@ -237,36 +237,37 @@ print("Based on your responses, you have experienced",sum(user_responses),"sympt
 
 # Final recommendation and zip code test #
 ## Recommendations for users who have 4 or more symptoms of COVID-19 ##
-if sum(user_responses) >= 4:
-    print("You have indicated that you have experienced atleast 4 of the symptoms of COVID-19.")
-    if "Dry cough" and "Vomitting" in user_symptoms:
-        print("By indicating that you have experienced a dry cough and vomitting, two of the most severe symptoms of COVID-19, you are considered especially at risk for complications from the virus.")
+if sum(user_responses) > 4:
+    print("You have indicated that you have experienced atleast 5 of the symptoms of COVID-19.")
+    if "Dry cough" and "Vomiting" in user_symptoms:
+        print("By indicating that you have experienced a dry cough and vomiting, two of the most severe symptoms of COVID-19, you are considered especially at risk for complications from the virus.")
     
     elif "Dry cough" in user_symptoms:
         print("By indicating that you have experienced a dry cough, one of the most severe symptoms of COVID-19, you are considered especially at risk for complications from the virus.")
     
-    elif "Vomitting" in user_symtpoms:
-        print("By indicating that you have had issues with vomitting, one of the most severe symptoms of COVID-19, you are considered especially at risk for complications from the virus.")
+    elif "Vomiting" in user_symptoms:
+        print("By indicating that you have had issues with vomiting, one of the most severe symptoms of COVID-19, you are considered especially at risk for complications from the virus.")
     
     print("Because of this, we strongly recommend that you get tested for COVID-19.")
     import zip_code_test_2 as zip_code_test
     zip_code_test
 
 ## Recommendations for users who have less than 4 symptoms of COVID-19 ##
-elif sum(user_responses) < 4:
-    print("You have indicated that you are suffering from less than 4 symptoms of COVID-19, which does not render you a 'high-risk' individual for COVID-19 complications currently.")
-    if "Dry cough" and "Vomitting" in user_symptoms:
-        print("However, because you have had issues with both vomitting and a dry cough, which are considered the most severe symptoms of COVID-19, we strongly recommend that you get tested for COVID-19.")
+elif sum(user_responses) <= 4:
+    print("You have indicated that you are suffering from less than 5 symptoms of COVID-19, which does not render you a 'high-risk' individual for COVID-19 complications currently.")
+    if "Dry cough" and "Vomiting" in user_symptoms:
+        print("However, because you have had issues with both vomiting and a dry cough, which are considered the most severe symptoms of COVID-19, we strongly recommend that you get tested for COVID-19.")
         import zip_code_test_2 as zip_code_test
         zip_code_test
+
 
     elif "Dry cough" in user_symptoms:
         print("However, because you have a dry cough, which is considered a severe symptom of COVID-19, we still recommend that you get tested for COVID-19.")
         import zip_code_test_2 as zip_code_test
         zip_code_test
 
-    elif "Vomitting" in user_symptoms:
-        print("However, because you have had issues with vomitting, which is considered a severe symtpom of COVID-19, we strongly recommend that you get tested for COVID-19.")
+    elif "Vomiting" in user_symptoms:
+        print("However, because you have had issues with vomiting, which is considered a severe symtpom of COVID-19, we strongly recommend that you get tested for COVID-19.")
         import zip_code_test_2 as zip_code_test
         zip_code_test
   
