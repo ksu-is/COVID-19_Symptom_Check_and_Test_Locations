@@ -20,8 +20,8 @@
 
 [DONE] Write and edit code       
                    
-[In Progress] Test code                
+[DONE] Test code                
 
-[In Progress] Make final changes              
+[DONE] Make final changes              
 
 [] Submit                        
