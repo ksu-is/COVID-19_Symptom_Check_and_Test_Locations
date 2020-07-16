@@ -199,7 +199,7 @@ while True:
             break
         else:
             print("Incorrect response. Please try again and enter '1' for 'Yes' or '0' for 'No'.")
-            vomitting = input("Have you also had any issues with vomitting within the last two weeks? ")
+            vomitting = input("Have you also had any issues with vomiting within the last two weeks? ")
     elif symptom11 == "0":
         break
     else:
@@ -236,14 +236,15 @@ print("Based on your responses, you have experienced",sum(user_responses),"sympt
 # End summary statement #
 
 # Final recommendation and zip code test #
-## Recommendations for users who have 4 or more symptoms of COVID-19 ##
+## Recommendations for users who have 5 or more symptoms of COVID-19 ##
 if sum(user_responses) > 4:
     print("You have indicated that you have experienced atleast 5 of the symptoms of COVID-19.")
-    if "Dry cough" and "Vomiting" in user_symptoms:
-        print("By indicating that you have experienced a dry cough and vomiting, two of the most severe symptoms of COVID-19, you are considered especially at risk for complications from the virus.")
     
-    elif "Dry cough" in user_symptoms:
-        print("By indicating that you have experienced a dry cough, one of the most severe symptoms of COVID-19, you are considered especially at risk for complications from the virus.")
+    if "Dry cough" in user_symptoms:
+        if "Vomiting" in user_symptoms:
+             print("By indicating that you have experienced a dry cough and vomiting, two of the most severe symptoms of COVID-19, you are considered especially at risk for complications from the virus.")
+        else:
+            print("By indicating that you have experienced a dry cough, one of the most severe symptoms of COVID-19, you are considered especially at risk for complications from the virus.")
     
     elif "Vomiting" in user_symptoms:
         print("By indicating that you have had issues with vomiting, one of the most severe symptoms of COVID-19, you are considered especially at risk for complications from the virus.")
@@ -252,19 +253,18 @@ if sum(user_responses) > 4:
     import zip_code_test_2 as zip_code_test
     zip_code_test
 
-## Recommendations for users who have less than 4 symptoms of COVID-19 ##
+## Recommendations for users who have less than 5 symptoms of COVID-19 ##
 elif sum(user_responses) <= 4:
     print("You have indicated that you are suffering from less than 5 symptoms of COVID-19, which does not render you a 'high-risk' individual for COVID-19 complications currently.")
-    if "Dry cough" and "Vomiting" in user_symptoms:
-        print("However, because you have had issues with both vomiting and a dry cough, which are considered the most severe symptoms of COVID-19, we strongly recommend that you get tested for COVID-19.")
+    
+    if "Dry cough" in user_symptoms:
+        if "Vomiting" in user_symptoms:
+            print("However, because you have had issues with both vomiting and a dry cough, which are considered the most severe symptoms of COVID-19, we strongly recommend that you get tested for COVID-19.")
+        else:
+            print("However, because you have had issues with a dry cough, which is considered a severe symptom of COVID-19, we strongly recommend that you get tested for COVID-19.")
         import zip_code_test_2 as zip_code_test
         zip_code_test
 
-
-    elif "Dry cough" in user_symptoms:
-        print("However, because you have a dry cough, which is considered a severe symptom of COVID-19, we still recommend that you get tested for COVID-19.")
-        import zip_code_test_2 as zip_code_test
-        zip_code_test
 
     elif "Vomiting" in user_symptoms:
         print("However, because you have had issues with vomiting, which is considered a severe symtpom of COVID-19, we strongly recommend that you get tested for COVID-19.")
